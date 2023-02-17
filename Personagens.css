@@ -1,0 +1,527 @@
+/* Geral */
+
+.Background {
+    background-image: url(../Images/wallpaperbetter.com_7680x4320.jpg);
+    background-attachment: fixed;
+    /* background-image: url(../Downloads/21992-16512697276612.png); */
+    /* background-image: url(../Downloads/1113439.jpg); */
+    /* background-position: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.vols ul:not(.fade-in) {
+    opacity: 0;
+}
+      
+.vols ul.fade-in {
+    opacity: 1;
+    transition: 1000ms;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;  
+}
+
+.Conteúdo {
+    flex: 1 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.855),rgb(75, 136, 189));
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo {
+    padding-left: 10px;
+}
+
+.Personagem {
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+/* Responsivo */
+@media (max-width:575px) /* or (max-width: 769px) */{
+    #btn-mobile {
+        display: flex;
+        margin-right: 20px;
+        background: none;
+        border: none;
+        padding: .5rem;
+        
+    }
+    #itens {
+        font-size: 30px;
+        display: block;
+        position: absolute;
+        width: 390px;
+        top: 48px;
+        margin-left: -320px;
+        height: 0px;
+        transition: .6s;
+        background:rgba(75, 136, 189, 0.889);
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #itens{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        /* display: block; */
+    }
+
+    #teste {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .Seta img{
+        margin-left: -250px;
+    }
+
+    #nav ul li:hover ul {
+        display: contents;
+    }
+
+    #nav #itens li ul li a {
+        background-color: rgba(33, 90, 139, 0.889);
+    }
+
+    .Personagem {
+        display: none;
+    }
+
+    .Logo img{
+        width: 150px;
+    }
+
+    #Perso {
+        width: 200px;
+        margin-left: px;
+    }
+
+    .open .text {
+        font-size: 15px;
+        margin-top: 400px;
+        margin-left: -240px;
+        margin-right: 10px;
+    }
+
+    main #Jinbas {
+       width: 300px;
+       margin-left: -55px;
+       
+    }
+
+    main #CuttyFlam {
+        width: 300px;
+        margin-left: -55px;
+    }
+
+    main #CuttyFlamText {
+        margin-top: 430px;
+        margin-left: -285px;
+    }
+
+    main #ChopperText {
+        margin-top: 300px;
+    }
+
+    main #JinbasText {
+        margin-top: 300px;
+        margin-left: -285px;
+    }
+
+    .Topo {
+        display: none;
+    }
+
+    footer ul {
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+
+    footer #Esquerda {
+        margin-left: -20px;
+        font-size: 7px;
+    }
+
+    footer #Direita {
+        font-size: 7px;
+    }
+
+}
+
+@media /* (max-width:575px) or  */(min-width: 768px) and (max-width: 1000px){
+    #btn-mobile {
+        display: flex;
+        margin-right: 20px;
+        background: none;
+        border: none;
+        padding: .5rem;
+        
+    }
+    #itens {
+        font-size: 30px;
+        display: block;
+        position: absolute;
+        width: 390px;
+        top: 48px;
+        margin-left: -320px;
+        height: 0px;
+        transition: .6s;
+        background:rgba(75, 136, 189, 0.889);
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #itens{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        /* display: block; */
+    }
+
+    #teste {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .Seta img{
+        margin-left: -250px;
+    }
+
+    #nav ul li:hover ul {
+        display: contents;
+    }
+
+    #nav #itens li ul li a {
+        background-color: rgba(33, 90, 139, 0.889);
+    }
+
+    .Personagem {
+        display: none;
+    }
+
+    .Logo img{
+        width: 150px;
+    }
+
+    #Perso {
+        width: 200px;
+        margin-left: 165px;
+    }
+
+    .open .text {
+        font-size: 15px;
+        margin-top: 400px;
+        margin-left: -410px;
+        margin-right: 10px;
+    }
+
+    main #Jinbas {
+       width: 300px;
+       margin-left: 110px;
+       
+    }
+
+    main #CuttyFlam {
+        width: 300px;
+        margin-left: 110px;
+    }
+
+    main #CuttyFlamText {
+        margin-top: 430px;
+        margin-left: -455px;
+    }
+
+    main #ChopperText {
+        margin-top: 300px;
+    }
+
+    main #JinbasText {
+        margin-top: 300px;
+        margin-left: -455px;
+    }
+
+    .Topo {
+        display: none;
+    }
+
+    footer ul {
+        font-size: 25px;
+        margin-top: 15px;
+        margin-left: -10px;
+    }
+
+    footer #Esquerda {
+        margin-left: -20px;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    footer #Direita {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Cabeçalho - Menu DropDown */
+nav ul {
+    display: flex;
+    font-family: 'Denk One', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-top: 25px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+nav ul li {
+    margin-right: 50px;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgb(114, 19, 19);
+    width: 290px;
+    height: 30px;
+    /* text-decoration: none; */
+}
+
+nav ul li a:hover {
+    background-color: rgb(59, 9, 9);
+    padding-left: 10px;
+    width: 295px;
+    height: 30px;
+}
+
+nav ul li ul {
+    display: none;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(158, 36, 36);
+    padding: 10px;
+    position: absolute;
+    margin-top: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Cabeçalho - Animação Seta */
+.Seta {
+    position: relative;
+    display: block;
+}
+
+.Seta span {
+    display: none;
+}
+
+.Seta:hover span {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    margin-left: 5px;
+}
+
+/* Corpo */
+main {
+    padding-top: 220px;
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+details {
+    font-family: 'Denk One', sans-serif;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0.5em 0.5em 0;
+    background-color: rgb(158, 36, 36);
+}
+
+summary {
+    list-style: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+    background-color: rgb(180, 49, 49);
+}
+
+details[open] {
+    padding: 0.5em;
+    background-color:rgba(25, 102, 138, 0.632);
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+    
+details[open] > ul.open{
+    font-size: 20px;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+   
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;    
+    }   
+}
+
+.text{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 50px;
+    padding: 0.3em
+}
+
+.open {
+    display: flex;
+}
+
+.imgPerso{
+    margin-left: 50px;
+    align-items: center;
+}
+
+.text:hover {
+    color: black;
+}
+
+h6, p, ol, li{
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+ol {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(158, 36, 36);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 50px;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+ol li {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 100px;
+    width: 50px;
+    height: 30px;
+}
+
+h6 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+ol li a {
+    display: block;
+    padding-top: 10px;
+    background-color: rgb(114, 19, 19);
+    width: 150px;
+    height: 40px;
+}
+
+ol li a:hover {
+    background-color: rgb(59, 9, 9);
+}
+
+/* Rodapé */
+footer {
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.855),rgb(75, 136, 189));
+    padding: 0px;
+    color: white;
+    justify-content: center;
+    font-family: 'Denk One', sans-serif;
+    right: 0;
+}
+
+.Topo {
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: -30px;
+}
+
+#Esquerda {
+    font-size: 15px;
+}
+
+#Direita {
+    font-size: 15px;
+    margin-top: 8px;
+}
