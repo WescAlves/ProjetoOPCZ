@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="Mobile-PG_Inicial.css">
+    <link rel="icon" href="Images/pngwing.com.png">
+    <title>One Piece CZ</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap" rel="stylesheet">
+</head>
+<body class="Background">
+    
+    <header>
+        
+        <div class="Logo"><a href="index.html"><img src="Images/TESTE.png" alt="Logo" width="250"></a></div>
+        <div class="Personagem"><img src="Images/pngwing.com.png" alt="Personagem" width="150"></div>
+        <nav id="nav">
+            <button id="btn-mobile"><img src="Images/burguer.png" alt="Burguer" width="40"></a></button>
+            <ul id="itens">
+                <li id="teste" class="Seta">MANGÁ <span><img src="Images/Seta-Baixo.png" alt="Animacao" width="25"></span>
+                    <ul id="itens2" >
+                    <li><a href="Mangá-Último.html">ÚLTIMO LANÇADO</a></li>
+                    <li><a href="Mangá-Todos.html">TODOS OS VOLUMES</a></li>
+                    </ul>
+                </li>
+                
+                <li id="teste" class="Seta">ANIME <span><img src="Images/Seta-Baixo.png" alt="Animacao" width="25"></span>
+                    <ul>
+                    <li><a href="Anime-Último.html">ÚLTIMO LANÇADO</a></li>
+                    <li><a href="Anime-Todos.html">TODOS OS EPISÓDIOS</a></li>
+                    </ul>
+                </li>
+                
+                <a href="Personagens.html">PERSONAGENS</a>     
+            </ul>
+        </nav>
+        
+    </header>
+   
+
+    <main>
+        <div class="RetanguloESQ">
+            
+            <div>
+            <div id="SinopseESQ"><h4>SINOPSE</h4></div>    
+            <div id="TextoESQ"><p>A série foca em Monkey D. Luffy e seu bando pirata, o Bando do Chapéu de Palha. Luffy é um jovem que possui um corpo de borracha, que, inspirado em seu ídolo de infância, o poderoso pirata Shanks, o Ruivo, aquele que lhe deu seu chapéu, parte em uma jornada do mar do East Blue para encontrar o tesouro mítico, o One Piece, e proclamar-se o Rei dos Piratas.</p></div>       
+            </div>
+
+            
+            <div id="ImagemESQ"><img src="Images/IMGRECTANGLE.jpeg" alt="" width="400px" ></div>
+        
+        </div>
+
+        <div class="RetanguloDIR">
+            <span>
+            <div id="ImagemDIR"><img src="Images/BANDO.png" alt="" width="400px" height="300px"></div>
+        
+            <div>
+            <div id="SinopseDIR"><h4>SOBRE A OBRA</h4></div>    
+            <div id="TextoDIR"><p>One Piece é uma série de mangá escrita e ilustrada por Eiichiro Oda. Os capítulos têm sido serializados na revista Weekly Shōnen Jump desde 22 de julho de 1997, com os capítulos compilados e publicados em 104 volumes tankōbon pela editora Shueisha até novembro de 2022.</p></div>       
+            </div>
+            </span>
+        </div>
+        
+
+        <div class="RetanguloESQ">
+            
+            <div>
+            <div id="ODA"><h4>AUTOR</h4></div>    
+            <div id="TextoESQ"><p>Eiichiro Oda é um mangaká, sendo mais conhecido como criador da série One Piece. One Piece é o Mangá mais vendido de todos os tempos com 480 milhões de cópias vendidas em todo o mundo, rendendo à Oda o título de um dos autores de ficção mais vendidos.</p></div>       
+            </div>
+
+            
+            <div id="ImagemESQ"><img src="Images/Oda.jpg" alt="" width="400px"></div>
+        
+        </div>
+
+
+        <div class="RetanguloDIR">
+            <div id="ImagemDIR"><img src="Images/ONEPIECENETFLIX.png" alt="" width="400px"></div>
+            
+            <div>
+            <div id="BR"><h4>ONE PIECE NO BRASIL</h4></div>    
+            <div id="TextoDIR"><p>Atualmente o anime está sendo dublado pela Netflix, que também está produzindo um Live Action da obra. Os mangás são traduzidos e distribuídos pela editora Panini, que conta com o lançamento da versão Tankoubon e a mais recente versão 3 em 1.</p></div>       
+            </div>
+        </div>
+
+        
+    </main>
+    
+
+    <footer>
+
+        <ul>
+            <li id="Esquerda">TODOS OS DIREITOS DE ONE PIECE <br> RESERVADOS A EIICHIRO ODA.</li>
+            <li>FEITO DE FÃ PARA FÃ</li>
+            <li id="Direita">COPYRIGHT ONE PIECE CZ 2023</li>
+        </ul>
+
+    </footer>
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+
+        function toggleMenu(){
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+
+        btnMobile.addEventListener('click', toggleMenu);
+    </script>
+</body>
+</html>

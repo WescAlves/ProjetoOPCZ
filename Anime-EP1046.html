@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Anime-EP1046.css">
+    <link rel="icon" href="Images/pngwing.com.png">
+    <title>One Piece Cz - Ep. 1046</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap" rel="stylesheet">
+</head>
+
+<body id="Background">
+    
+    <header>
+        
+        <div class="Logo"><a href="Projeto_OPCZ-PG_Inicial.html"><img src="Images/TESTE.png" alt="Logo" width="250"></a></div>
+        <div class="Personagem"><img src="Images/pngwing.com.png" alt="Personagem" width="150"></div>
+
+        <nav id="nav" >
+            <button id="btn-mobile"><img src="Images/burguer.png" alt="Burguer" width="40"></a></button>
+            <ul id="itens" >
+                <li id="teste" class="Seta">MANGÁ <span><img src="Images/Seta-Baixo.png" alt="Animacao" width="25"></span>
+                    <ul>
+                    <li><a href="Mangá-Último.html">ÚLTIMO LANÇADO</a></li>
+                    <li><a href="Mangá-Todos.html">TODOS OS VOLUMES</a></li>
+                    </ul>
+                </li>
+                
+                <li id="teste" class="Seta">ANIME <span><img src="Images/Seta-Baixo.png" alt="Animacao" width="25"></span>
+                    <ul>
+                    <li><a href="Anime-Último.html">ÚLTIMO LANÇADO</a></li>
+                    <li><a href="Anime-Todos.html">TODOS OS EPISÓDIOS</a></li>
+                    </ul>
+                </li>
+                
+                <a href="Personagens.html">PERSONAGENS</a>     
+            </ul>
+        </nav>
+        
+    </header>
+   
+
+    <main class="Conteúdo">
+        
+        <ol>
+        <li id="Esq" ><a href=""><img src="Images/ANTERIOR.png" alt="Anterior" width="25"></a></li>
+        <h6 id="Titulo" >EPISÓDIO 1046 - O TUDO OU NADA DO JOGO MORTAL! AS DUAS ASAS PARTEM PRA GUERRA!</h6>
+        <h6 id="Titulo2" >EPISÓDIO 1046 </h6>
+        <li id="Dir"><a href="Anime-Último.html"><img src="Images/PROXIMO.png" alt="Proximo" width="25"></a></li>
+        </ol>
+        
+        <p><video controls src="Episodios/[AnimesTC] OpEx_1046.mp4" width="800"></video></p>
+    
+    </main>
+    
+
+    <footer class="Rodapé">
+        <ul>
+            <li id="Esquerda">TODOS OS DIREITOS DE ONE PIECE <br> RESERVADOS A EIICHIRO ODA.</li>
+            <li>FEITO DE FÃ PARA FÃ </li>
+            <li id="Direita">COPYRIGHT ONE PIECE CZ 2023</li>
+        </ul>
+
+    </footer>
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+
+        function toggleMenu(){
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+
+        btnMobile.addEventListener('click', toggleMenu);
+    </script>
+</body>
+</html>
