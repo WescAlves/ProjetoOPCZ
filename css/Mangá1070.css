@@ -1,0 +1,599 @@
+
+/* Geral */
+#Background {
+    background-image: url(../Images/wallpaperbetter.com_7680x4320.jpg);
+    background-attachment: fixed;
+    /* background-image: url(../Downloads/21992-16512697276612.png); */
+    /* background-image: url(../Downloads/1113439.jpg); */
+    /* background-position: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.Conteúdo {
+    flex: 1 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.855),rgb(75, 136, 189));
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo {
+    padding-left: 10px;
+}
+
+.Personagem {
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+
+#Titulo2 {
+    display: none;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+
+/* Responsivo */
+@media (max-width:575px) /* or (max-width: 769px) */{
+    #btn-mobile {
+        display: flex;
+        margin-right: 20px;
+        background: none;
+        border: none;
+        padding: .5rem;
+        
+    }
+    #itens {
+        font-size: 30px;
+        display: block;
+        position: absolute;
+        width: 390px;
+        top: 48px;
+        margin-left: -320px;
+        height: 0px;
+        transition: .6s;
+        background:rgba(75, 136, 189, 0.889);
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #itens{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        /* display: block; */
+    }
+
+    main #MenuPCAP #Esq a {
+        width: 40px;
+    }
+
+    main #MenuPCAP #Dir a {
+        width: 40px;
+    }
+
+    #Titulo {
+        display: none;
+    }
+
+    #Titulo2 {
+        display: block;
+        font-size: 20px;
+    }
+
+    main #MenuPCAP li {
+        margin-left: 0px;
+        margin-right: -10px;
+    }
+
+    #teste {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .Seta img {
+        margin-top: 0px;
+        margin-left: -250px;
+        width: 20px;
+    }
+
+    #nav ul li:hover ul {
+        display: contents;
+    }
+
+    #nav #itens li ul li a {
+        background-color: rgba(33, 90, 139, 0.889);
+    }
+   
+    .Personagem {
+        display: none;
+    }
+
+    .Logo img{
+        width: 150px;
+    }
+
+    main .Slider {
+        width: 350px;
+        margin-bottom: 20px;
+    }
+
+    main .Slider .Navigation-bar {
+        display: contents;
+    }
+
+    main .Slider .Manual-btn {
+        padding: 3.5px 5px;
+        margin-right: -4px;
+    }
+
+    footer ul {
+        font-size: 15px;
+        margin-top: 15px;
+        margin-left: -10px;
+    }
+
+    footer #Esquerda {
+        margin-left: -20px;
+        margin-top: 5px;
+        font-size: 7px;
+    }
+
+    footer #Direita {
+        margin-top: 5px;
+        font-size: 7px;
+    }
+}
+
+@media /* (max-width:575px) or  */(min-width: 768px) and (max-width: 1000px) {
+    #btn-mobile {
+        display: flex;
+        margin-right: 20px;
+        background: none;
+        border: none;
+        padding: .5rem;
+        
+    }
+    #itens {
+        font-size: 30px;
+        display: block;
+        position: absolute;
+        width: 390px;
+        top: 48px;
+        margin-left: -320px;
+        height: 0px;
+        transition: .6s;
+        background:rgba(75, 136, 189, 0.889);
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #itens{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        /* display: block; */
+    }
+
+    main #MenuPCAP #Esq a {
+        width: 40px;
+    }
+
+    main #MenuPCAP #Dir a {
+        width: 40px;
+    }
+
+    #Titulo {
+        display: none;
+    }
+
+    #Titulo2 {
+        display: block;
+        font-size: 20px;
+    }
+
+    main #MenuPCAP li {
+        margin-left: 0px;
+        margin-right: -10px;
+    }
+
+    #teste {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .Seta img {
+        margin-top: 0px;
+        margin-left: -250px;
+        width: 20px;
+    }
+
+    #nav ul li:hover ul {
+        display: contents;
+    }
+
+    #nav #itens li ul li a {
+        background-color: rgba(33, 90, 139, 0.889);
+    }
+   
+    .Personagem {
+        display: none;
+    }
+
+    .Logo img{
+        width: 150px;
+    }
+
+    main .Slider {
+        width: 650px;
+        margin-bottom: 20px;
+    }
+
+    main .Slider .Navigation-bar {
+        display: contents;
+    }
+
+    main .Slider .Manual-btn {
+        padding: 3.5px 15px;
+        margin-right: -2.5px;
+    }
+
+    footer ul {
+        font-size: 25px;
+        margin-top: 15px;
+        margin-left: -10px;
+    }
+
+    footer #Esquerda {
+        margin-left: -20px;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    footer #Direita {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Cabeçalho - Menu DropDown */
+nav ul {
+    display: flex;
+    font-family: 'Denk One', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-top: 25px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+nav ul li {
+    margin-right: 50px;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgb(114, 19, 19);
+    width: 290px;
+    height: 30px;
+    /* text-decoration: none; */
+}
+
+nav ul li a:hover {
+    background-color: rgb(59, 9, 9);
+    padding-left: 10px;
+    width: 295px;
+    height: 30px;
+}
+
+nav ul li ul {
+    display: none;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(158, 36, 36);
+    padding: 10px;
+    position: absolute;
+    margin-top: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Cabeçalho - Animação Seta */
+.Seta {
+    position: relative;
+    display: block;
+}
+
+.Seta span {
+    display: none;
+}
+
+.Seta:hover span {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    margin-left: 5px;
+}
+
+/* Corpo */
+main {
+    padding-top: 220px;
+    color: white;
+    font-size: 30px;
+    background-color: rgba(28, 28, 28, 0.719);
+}
+
+h6, p, li{
+    margin: 0;
+}
+
+#MenuPCAP {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(158, 36, 36);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 50px;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#MenuPCAP li {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 100px;
+    width: 50px;
+    height: 30px;
+}
+
+h6 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#MenuPCAP li a {
+    display: block;
+    padding-top: 10px;
+    background-color: rgb(114, 19, 19);
+    width: 150px;
+    height: 40px;
+}
+
+#MenuPCAP li a:hover {
+    background-color: rgb(59, 9, 9);
+}
+
+/* Leitor de Mangá */
+.Slider {
+    width: 1000px;
+    height: px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+/*  */
+/* .Navigation-auto {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.Navigation-auto div {
+    padding: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgb(158, 36, 36);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Navigation-auto div:not(:last-child) {
+    margin-right: 2px;
+} */
+/*  */
+
+.slides {
+    display: flex;
+    width: 1600%;  /* Quantidade de imagens, cada imagem é 100% */
+}
+
+.Navigation-bar {
+    display: flex;
+}
+
+input {
+    display: none;
+}
+
+.Manual-btn {
+    padding: 10px;
+    cursor: pointer;
+    width: 70px;
+    height: 20px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgb(158, 36, 36);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Manual-btn:not(:last-child) {
+    margin-right: 2px;
+}
+
+.Manual-btn:hover {
+    background: rgb(114, 19, 19);
+    transition: 0.4s;
+}
+
+.slide {
+    width: 6.25%; /* 100% dividido pela quantdade de imagens */
+    transition: 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+    background-color: black;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -6.25%; /* Alterar dependendo width anterios de .slide, se fosse 5 imgs, seria -20% */
+}
+
+#radio3:checked ~ .first {
+    margin-left: -12.50%; /* Seria -40% se fosse 5 imgs */
+}
+
+#radio4:checked ~ .first {
+    margin-left: -18.75%; /* Seria -60% se fosse 5 imgs */
+}
+
+#radio5:checked ~ .first {
+    margin-left: -25%; 
+}
+
+#radio6:checked ~ .first {
+    margin-left: -31.25%; 
+}
+
+#radio7:checked ~ .first {
+    margin-left: -37.50%; 
+}
+
+#radio8:checked ~ .first {
+    margin-left: -43.75%; 
+}
+
+#radio9:checked ~ .first {
+    margin-left: -50%; 
+}
+
+#radio10:checked ~ .first {
+    margin-left: -56.25%; 
+}
+
+#radio11:checked ~ .first {
+    margin-left: -62.50%; 
+}
+
+#radio12:checked ~ .first {
+    margin-left: -68.75%; 
+}
+
+#radio13:checked ~ .first {
+    margin-left: -75%; 
+}
+
+#radio14:checked ~ .first {
+    margin-left: -81.25%; 
+}
+
+/* #radio15:checked ~ .first {
+    margin-left: -87.50%; 
+}
+
+#radio16:checked ~ .first {
+    margin-left: -93.75%; 
+} */
+
+/*  */
+/* #radio1:checked ~ .Navigation-auto .auto-btn1 {
+    background-color: rgb(59, 9, 9);
+}
+
+#radio2:checked ~ .Navigation-auto .auto-btn2 {
+    background-color: rgb(59, 9, 9);
+}
+
+#radio3:checked ~ .Navigation-auto .auto-btn3 {
+    background-color: rgb(59, 9, 9);
+}
+
+#radio4:checked ~ .Navigation-auto .auto-btn4 {
+    background-color: rgb(59, 9, 9);
+} */
+/*  */
+
+/* Rodapé */
+footer {
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.855),rgb(75, 136, 189));
+    padding: 0px;
+    color: white;
+    justify-content: center;
+    font-family: 'Denk One', sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: -30px;
+}
+
+#Esquerda {
+    font-size: 15px;
+}
+
+#Direita {
+    font-size: 15px;
+    margin-top: 8px;
+}

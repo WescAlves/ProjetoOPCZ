@@ -1,0 +1,578 @@
+/* Geral */
+.Background {
+    background-image: url(../Images/wallpaperbetter.com_7680x4320.jpg);
+    background-attachment: fixed;
+    /* background-image: url(../Downloads/21992-16512697276612.png); */
+    /* background-image: url(../Downloads/1113439.jpg); */
+    /* background-position: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.855),rgb(75, 136, 189));
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo {
+    padding-left: 10px;
+}
+
+.Personagem {
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+@media (max-width:576px) /* or (max-width:768px)  */{
+    #btn-mobile {
+        display: flex;
+        margin-right: 20px;
+        background: none;
+        border: none;
+        padding: .5rem;
+        
+    }
+    #itens {
+        font-size: 30px;
+        display: block;
+        position: absolute;
+        width: 390px;
+        top: 48px;
+        margin-left: -320px;
+        height: 0px;
+        transition: .6s;
+        background:rgba(75, 136, 189, 0.889);
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #itens{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        /* display: block; */
+    }
+
+    #teste {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .Seta img{
+        margin-left: -250px;
+    }
+
+    #nav ul li:hover ul {
+        display: contents;
+    }
+
+    #nav #itens li ul li a {
+        background-color: rgba(33, 90, 139, 0.889);
+    }
+
+    .Personagem {
+        display: none;
+    }
+
+    .Logo img{
+        width: 150px;
+    }
+
+    main .RetanguloDIR {
+        /* display: flex;
+        flex-direction: column; */
+        list-style: none;
+        background-color: rgb(230, 230, 230);
+        color: black;
+        width: 370px;
+        height: 710px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        border-radius: 20px ;
+        animation: none;
+    }
+
+    .RetanguloDIR img {
+        width: 350px;
+    }
+    
+    .RetanguloDIR #SinopseDIR {
+        margin-left: 110px;
+        margin-top: 300px;
+    } 
+
+    .RetanguloDIR #TextoDIR {
+        margin-left: -10px;
+        margin-right: 10px;
+        margin-top: -30px;
+    }
+
+    main .RetanguloESQ {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: rgb(230, 230, 230);
+        color: black;
+        width: 370px;
+        height: 750px;
+        float: right;
+        margin-bottom: 30px;
+        padding-right: 20px;
+        border-radius: 20px;
+        animation: none;
+    }
+
+    .RetanguloESQ img {
+        width: 350px;
+        margin-left: -580px;
+    }
+    
+    .RetanguloESQ #SinopseESQ {
+        margin-left: 90px;
+        margin-top: 340px;
+    }
+
+    .RetanguloESQ #TextoESQ {
+        margin-left: 10px;
+        margin-right: -10px;
+        margin-top: -30px;
+    }
+
+    .RetanguloDIR #SinopseDIR {
+        margin-top: 340px;
+        margin-left: 70px; 
+    }
+    
+    .RetanguloDIR #BR {
+        margin-top: 300px;
+        margin-left: 7px; 
+    }
+
+    .RetanguloESQ #SinopseESQ {
+        margin-top: 300px;
+        margin-left: 125px; 
+    }
+
+    .RetanguloESQ #ODA {
+        margin-top: 300px;
+        margin-left: 135px; 
+    }
+
+    #SinopseESQ {
+        margin-left: 220px;
+    }
+
+    footer ul {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+
+    footer #Esquerda {
+        font-size: 7px;
+    }
+
+    footer #Direita {
+        font-size: 7px;
+    }
+}
+
+@media /* (max-width:575px) or  */(min-width: 768px) and (max-width: 1000px) {
+    #btn-mobile {
+        display: flex;
+        margin-right: 20px;
+        background: none;
+        border: none;
+        padding: .5rem;
+        
+    }
+    #itens {
+        font-size: 30px;
+        display: block;
+        position: absolute;
+        width: 390px;
+        top: 48px;
+        margin-left: -320px;
+        height: 0px;
+        transition: .6s;
+        background:rgba(75, 136, 189, 0.889);
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #itens{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+        /* display: block; */
+    }
+
+    #teste {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .Seta img{
+        margin-left: -250px;
+    }
+
+    #nav ul li:hover ul {
+        display: contents;
+    }
+
+    #nav #itens li ul li a {
+        background-color: rgba(33, 90, 139, 0.889);
+    }
+
+    .Personagem {
+        display: none;
+    }
+
+    .Logo img{
+        width: 150px;
+    }
+
+    main .RetanguloDIR {
+        /* display: flex;
+        flex-direction: column; */
+        list-style: none;
+        background-color: rgb(230, 230, 230);
+        color: black;
+        width: 680px;
+        height: 550px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        border-radius: 20px ;
+        animation: none;
+    }
+
+    .RetanguloDIR img {
+        width: 350px;
+        margin-left: 155px;
+    }
+    
+    .RetanguloDIR #SinopseDIR {
+        margin-right: -500px;
+        margin-top: 300px;
+    } 
+
+    .RetanguloDIR #TextoDIR {
+        margin-left: -10px;
+        margin-right: 10px;
+        margin-top: -30px;
+    }
+
+    main .RetanguloESQ {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: rgb(230, 230, 230);
+        color: black;
+        width: 680px;
+        height: 550px;
+        float: right;
+        margin-bottom: 30px;
+        padding-right: 20px;
+        border-radius: 20px;
+        animation: none;
+    }
+
+    .RetanguloESQ img {
+        width: 350px;
+        margin-left: -420px;
+    }
+    
+    .RetanguloESQ #SinopseESQ {
+        margin-left: 320px;
+        margin-top: 340px;
+    }
+
+    .RetanguloESQ #TextoESQ {
+        margin-left: 10px;
+        margin-right: -10px;
+        margin-top: -30px;
+    }
+
+    .RetanguloDIR #SinopseDIR {
+        margin-top: 340px;
+        margin-left: 220px; 
+    }
+    
+    .RetanguloDIR #BR {
+        margin-top: 300px;
+        margin-left: 160px; 
+    }
+
+    .RetanguloESQ #SinopseESQ {
+        margin-top: 300px;
+        margin-left: 285px; 
+    }
+
+    .RetanguloESQ #ODA {
+        margin-top: 300px;
+        margin-left: 290px; 
+    }
+
+    #SinopseESQ {
+        margin-left: -600px;
+    }
+
+    footer ul {
+        font-size: 25px;
+        margin-top: 15px;
+        margin-left: -10px;
+    }
+
+    footer #Esquerda {
+        margin-left: 0px;
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    footer #Direita {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Cabeçalho - Menu DropDown */
+nav ul {
+    display: flex;
+    font-family: 'Denk One', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-top: 25px;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+nav ul li {
+    margin-right: 50px;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgb(114, 19, 19);
+    width: 290px;
+    height: 30px;
+}
+
+nav ul li a:hover {
+    background-color: rgb(59, 9, 9);
+    padding-left: 10px;
+    width: 295px;
+    height: 30px;
+}
+
+nav ul li ul {
+    display: none;
+    width: 300px;
+    height: 100px;
+    background-color: rgb(158, 36, 36);
+    padding: 10px;
+    position: absolute;
+    margin-top: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Cabeçalho - Animação Seta */
+.Seta {
+    position: relative;
+    display: block;
+}
+
+.Seta span {
+    display: none;
+}
+
+.Seta:hover span {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    margin-left: 5px;
+}
+
+/* Corpo */
+main {
+    padding-top: 220px;
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.RetanguloDIR {
+    display: flex;
+    list-style: none;
+    background-color: rgb(230, 230, 230);
+    color: black;
+    width: 1000px;
+    height: 350px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-radius: 0px 20px 20px 0px;
+    animation-name: animation-right;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+
+@keyframes animation-right {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.RetanguloESQ {
+    display: flex;
+    list-style: none;
+    background-color: rgb(230, 230, 230);
+    color: black;
+    width: 1000px;
+    height: 350px;
+    float: right;
+    margin-bottom: 30px;
+    padding-right: 20px;
+    border-radius: 20px 0px 0px 20px;
+    animation-name: animation-left;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+
+@keyframes animation-left {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+#ImagemDIR {
+    position: absolute;
+    margin-top: 26px;
+}
+
+#ImagemESQ {
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 26px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+#SinopseDIR {
+    margin-left: 600px; 
+}
+
+#SinopseESQ {
+    margin-left: 220px;
+}
+
+#BR {
+    margin-left: 550px; 
+}
+
+#ODA {
+    margin-left: 250px;
+}
+
+#TextoDIR {
+    padding-top: 0px;
+    margin-left: 430px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+#TextoESQ {
+    padding-top: 0px;
+    margin-right: 430px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+p {
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* Rodapé */
+footer {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.855),rgb(75, 136, 189));
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    font-family: 'Denk One', sans-serif;
+    right: 0;
+}
+
+
+ul {
+    list-style: none;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#Esquerda {
+    font-size: 15px;
+    position: absolute;
+    left: 35px;
+    top: 25px;
+}
+
+#Direita {
+    font-size: 15px;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
